@@ -1,11 +1,11 @@
 # Homebrew formula for Relay.
 #
-# Install with (Homebrew >= 6 requires formulae to come from a tap, not a URL):
-#   brew tap Fiqqar/relay https://github.com/Fiqqar/Relay
-#   brew install Fiqqar/relay/relay
+# This repo IS the Homebrew tap for Relay: `brew tap Fiqqar/relay` resolves to
+# github.com/Fiqqar/homebrew-relay and this formula is its canonical copy.
+# The main Fiqqar/Relay repo no longer ships a formula (see its RELEASE.md).
 #
-# (A conventional `brew tap Fiqqar/relay` alone would require the repo to be
-# named `homebrew-relay`; the explicit URL above sidesteps that.)
+# On every release, re-point `url` + `sha256` below to the new sdist asset
+# (built by the Release workflow on the `v*` tag) and push.
 #
 # Released by `sdist` from the GitHub Release, built into a virtualenv.
 class Relay < Formula
